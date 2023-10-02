@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Fabian Orjuela",
+  "age": 23,
+  "email": "forjuela@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/6517127706f386b4fdae7864 HTTP/1.1
+
+###
+DELETE  http://localhost:9000/api/users/651ac995acc3e842db396433 HTTP/1.1
+ 
+###
+PUT http://localhost:9000/api/users/651725d965da39d4aea4d3cd HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Yeison Orjuela",
+  "age": 22,
+  "email": "yei.orju@gmail.com"
+}
